@@ -1,0 +1,154 @@
+.home {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: rgba(75, 74, 74, 0.324);
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  mix-blend-mode: multiply;
+}
+
+video {
+  position: absolute;
+  height: 70vh;
+  width: 100%;
+  bottom: 0;
+  top: 0;
+  object-fit: inherit;
+  background-color: rgb(236, 236, 236);
+  border-radius: 0 0 13px 13px;
+
+}
+
+.homeContent {
+  width: 100%;
+  height: max-content;
+  padding: 8rem 1.5rem 0rem;
+  display: flex;
+  row-gap: 3rem;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  margin: auto;
+  color: var(--whiteColor);
+  z-index: 100;
+}
+
+.textDiv {
+  padding: 2rem 0;
+}
+
+.smallText {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.homeTitle {
+  position: relative;
+  font-size: 1.8rem;
+}
+
+.cardDiv {
+  position: relative;
+  padding: 2rem 1rem;
+  background: var(--whiteColor);
+  border-radius: 10px;
+  gap: 1rem;
+}
+label {
+  display: block;
+  color: var(--textColor);
+  padding-bottom: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.label_total {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total {
+  color: var(--textColor);
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.input {
+  height: 40px;
+  padding: 0 1rem;
+  background: var(--inputColor);
+  border-radius: 3rem;
+}
+
+input {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 500;
+}
+input::placeholder {
+  font-size: 13px;
+}
+
+.rightIcons .icon {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.input[type="range"] {
+  background: rgb(255, 255, 255);
+}
+
+.searchOptions {
+  position: absolute;
+  background: var(--gradientColor);
+  width: max-content;
+  bottom: -0.7rem;
+  column-gap: 0.8rem;
+  padding: 5px 1rem;
+  border-radius: 3rem;
+  left: 50%;
+  transform: translate(-50%);
+  justify-content: center;
+  cursor: pointer;
+}
+
+.searchOptions:hover {
+  background: var(--primaryColor);
+}
+
+.icon {
+  font-size: 18px;
+}
+
+span {
+  font-size: 13px;
+  color: aliceblue;
+}
+
+.homeFooterIcons {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.homeFooterIcons .icon {
+  font-size: 20px;
+  margin: 0 5px;
+  color: var(--primaryColor);
+  font-weight: 600;
+}
+.homeFooterIcons:hover {
+  color: var(--primaryColor);
+}

@@ -1,0 +1,228 @@
+.registrationContainer {
+  width: 100%;
+  max-width: 500px;
+  height: 70vh;
+  /* margin: 0px auto; */
+  padding: 20px;
+  /* margin-left: 40%; */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  flex: 1;
+  /* position: relative; */
+
+  top: -5rem;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.registrationForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 3px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 1px;
+  color: #555;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.formGroup textarea {
+  resize: none;
+  padding: 0.2rem;
+  overflow-y: hidden;
+}
+
+.submitBtn {
+  /* justify-content: center; */
+  width: 40%;
+  padding: 2px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+.cen {
+  display: flex;
+  justify-content: center;
+}
+.submitBtn:hover {
+  background-color: #0056b3;
+}
+
+.endSign {
+  padding: 0.3rem 0rem;
+  padding-bottom: 0.2rem;
+  justify-content: center;
+}
+.endSign span {
+  padding-right: 2px;
+  color: rebeccapurple;
+}
+.option {
+  cursor: pointer;
+}
+.imgDiv {
+  flex: 1;
+  /* background:  rgb(229, 217, 229); */
+  /* justify-content: center; */
+  /* left: 10%; */
+  border-radius: 20px;
+  /* padding: 5rem; */
+  /* position: absolute; */
+}
+.imgDiv img {
+  width: 100%;
+  padding: 4rem;
+}
+.signp {
+  justify-content: center;
+  /* padding: 10rem; */
+  align-items: normal;
+  margin: 10rem;
+  margin-top: 7rem;
+}
+
+.signupModal {
+  /* display: none;*/
+  position: fixed;
+  z-index: 1200;
+  left: 0;
+  /* top: -10px; */
+  width: 70%;
+  height: 70%;
+  /* overflow: auto; */
+  margin: 10rem;
+  margin-top: 6rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+  /* position: relative; */
+}
+.signupModal.open {
+  display: block;
+  position: relative;
+}
+
+.signupModalContent {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 25px;
+  width: 50%;
+  position: fixed;
+  transform: scale(50%, 100%);
+}
+
+.signupModalContent h2 {
+  margin-bottom: 20px;
+}
+
+.signupModalContent .formGroup {
+  margin-bottom: 20px;
+}
+
+.signupModalContent label {
+  display: block;
+  font-weight: bold;
+}
+
+.signupModalContent input[type="text"],
+.signupModalContent input[type="email"],
+.signupModalContent input[type="password"],
+.signupModalContent textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.signupModalContent .submitBtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signupModalContent .submitBtn:hover {
+  background-color: #45a049;
+}
+
+.signupModalContent .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.signupModalContent .option {
+  cursor: pointer;
+  color: blue;
+}
+
+.signupModalContent .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.signupModalContent .close:hover,
+.signupModalContent .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .registrationContainer {
+    max-width: 600px;
+  }
+}
+
+.closeNavBarS,
+.toggleNavBarS {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1002;
+}
+.closeNavBarS .icon,
+.toggleNavBarS .icon {
+  font-size: 24px;
+  color: #555;
+}
+/* .toggleNavBarS {
+  top: 60px;
+  right: 20px;
+} */
+.close {
+  display: none;
+}
+/* .open{
+   display: inline;
+ } */

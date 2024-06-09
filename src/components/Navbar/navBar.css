@@ -1,0 +1,115 @@
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  width: 100%;
+  padding: 1rem 3rem;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+
+  /* position: relative; */
+  z-index: 1000;
+  /* box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904); */
+}
+.navHo {
+  /* color: var(--PrimaryColor);
+     */
+  color: whitesmoke;
+  font-size: 1.5rem;
+}
+
+.logo {
+  /* color: var(--blackColor); */
+  /* color: white; */
+  font-weight: 600;
+  font-size: 2rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo .icon {
+  font-size: 3rem;
+  color: white;
+  transform: translateY(5px);
+}
+
+.toggleNavBar .icon {
+  font-size: 25px;
+  /* color: aliceblue; */
+}
+/* .toggleNavBar:hover.icon{
+    color: rgb(6, 113, 206);
+} */
+
+.navItem {
+  position: relative;
+  cursor: pointer;
+}
+.navItem:hover {
+  border-radius: 5px;
+}
+.navScroll {
+  color: black;
+  background: rgb(119, 63, 119);
+}
+@media screen and (max-width: 768px) {
+  .navBar {
+    position: absolute;
+    background: #ffffff;
+    height: max-content;
+    width: 60%;
+    border-radius: 1rem;
+    top: -500rem;
+    left: 50%;
+    padding: 1rem;
+    transform: translateX(-50%);
+    z-index: 2000;
+    box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+    transition: 0.3s ease-in-out;
+  }
+  .isOpenNavbar {
+    top: 4rem;
+  }
+  .navLists {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: 0.5rem 0;
+  }
+
+  .navItem {
+    padding: 0.5rem 0;
+  }
+
+  .navLink {
+    color: var(--textColor);
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .navLink:hover {
+    color: var(--PrimaryColor);
+  }
+
+  /* .btn {
+        margin-top: 1rem;
+    } */
+  a {
+    font-weight: 600;
+    color: var(--whiteColor);
+  }
+  .closeNavBar {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: var(--PrimaryColor);
+  }
+  .closeNavBar:hover {
+    color: var(--secondaryColor);
+  }
+}

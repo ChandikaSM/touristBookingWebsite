@@ -1,0 +1,106 @@
+.divMain {
+    padding: 6rem;
+    display: flex;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+    background: rgba(210, 194, 219, 0.237);
+    margin: 1rem;
+    margin-top: 0;
+
+    /* background: var(--bodyColor); */
+}
+
+.leftSide {
+    flex: 1;
+}
+
+.rightSide {
+    flex: 1;
+}
+
+.mainBig {
+    flex: 1;
+}
+
+.mainBig img {
+    width: 100%;
+    height: max-content;
+    /* padding-bottom: 0; */
+    border-radius: 15px;
+    box-shadow: 2px 1px 1px rgba(160, 160, 159, 0.237);
+}
+
+.mainSmall {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.mainSmall img {
+    width: 32%;
+    padding: 0.3rem;
+    border-radius: 15px;
+}
+
+/* .innerRight{
+    padding-left: 2rem;
+} */
+.innerRight h1 {
+    color: var(--primaryColor);
+    padding: 1rem;
+}
+
+.innerRight>p {
+    color: var(--textColor);
+    text-align: justify;
+    padding: 1rem;
+
+}
+
+.fees {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    /* color: green; */
+}
+
+.rate {
+    font-size: 1.2rem;
+    /* padding-left: 10px; */
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.review {
+    font-size: 1rem;
+    color: grey;
+}
+
+@media screen and (max-width: 768px) {
+    .divMain {
+        flex-direction: column;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .divMain {
+        flex-direction: column;
+        padding: .7rem;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .divMain {
+        flex-direction: column;
+        /* padding: 5rem; */
+    }
+}

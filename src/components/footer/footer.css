@@ -1,0 +1,244 @@
+.footer {
+    width: 100%;
+    position: relative;
+    padding: 2rem 0;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.videoDiv {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.videoDiv video {
+    height: 100%;
+    object-fit: cover;
+}
+
+.videoDiv video::after {
+    content: '';
+    position: absolute;
+    background: rgba(10, 84, 107, 0.307);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    mix-blend-mode: multiply;
+}
+
+.secContent {
+    width: 100%;
+    height: max-content;
+    padding: 1rem initial;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    row-gap: 1rem;
+    z-index: 100;
+}
+
+.contactDiv {
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contactDiv .text small {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--primaryColor);
+}
+
+.contactDiv .text h2 {
+    color: var(--whiteColor);
+    font-size: 1.3rem;
+}
+
+.inputDiv {
+    width: 100%;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.inputDiv input {
+    width: 50%;
+    padding: .3rem .8rem;
+    border-radius: 3rem;
+    border: 1px solid var(--whiteColor);
+    outline: none;
+    background: transparent;
+    color: var(--whiteColor);
+}
+
+.inputDiv input::placeholder {
+    color: var(--whiteColor);
+    opacity: .5;
+}
+
+.inputDiv .btn {
+    width: 20%;
+    justify-content: center;
+    color: var(--whiteColor);
+    font-weight: 500;
+    gap: .4rem;
+}
+
+.inputDiv .btn .icon {
+    font-size: 18px;
+}
+
+.footerCard {
+    position: relative;
+    padding: .7rem .7rem 1.2rem;
+    gap: 1rem;
+    border-radius: 1rem;
+    background: var(--bodyColor);
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.footerIntro {
+    flex-basis: 50%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+.logoDiv {
+    color: var(--blackColor);
+    font-weight: 600;
+}
+
+.footerIntro .logoDiv .icon {
+    color: rgb(119, 63, 119);
+}
+
+.logoDiv .icon {
+    font-size: 35px;
+    margin-right: 10px;
+
+}
+
+.footerParagraph {
+    font-size: 13px;
+    color: var(--textColor);
+    padding: 1rem;
+    flex: 2;
+    text-align: justify;
+}
+
+.footerSocials {
+    flex: 1;
+    background: rgb(229, 217, 229);
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.footerSocials .icon {
+    color: rgb(90, 27, 90);
+    font-size: 30px;
+    margin-left: 1rem;
+}
+
+.footerSocials .icon:hover {
+    color: var(--primaryColor);
+}
+
+.footerLinks {
+    flex-basis: 50%;
+    width: 100%;
+    gap: 1rem;
+    margin-top: .4rem;
+    padding: 1rem;
+    background: rgb(229, 217, 229);
+    border-radius: 1.2rem;
+}
+
+.linkGroup {
+    text-align: center;
+    color: var(--textColor);
+}
+
+.linkGroup .groupTitle {
+    font-weight: 900;
+    font-size: 1.7rem;
+    color: var(--blackColor);
+    margin-bottom: 0.5rem;
+}
+
+.place {
+    background: yellow;
+    display: flex;
+}
+
+.temple,
+.picnic {
+    flex: 1;
+    padding: 1rem;
+    margin: 0rem 2rem;
+}
+
+.temple>li,
+.picnic>li {
+    cursor: pointer;
+}
+
+.templeHead {
+
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 5px;
+}
+
+.heading {
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.itemName {
+    padding: .6rem 0rem 0rem;
+    font-size: bold;
+    font-size: 1.5rem;
+    border-bottom: 1.4px solid rgb(119, 63, 119);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-width: 3px;
+
+
+}
+
+.footer ul li {
+    color: var(--textColor);
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.footer ul li:hover {
+    font-size: 1.1rem;
+    padding: .08rem;
+    color: rgb(120, 117, 121);
+}
+
+.endFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    color: #fff;
+    background: rgb(119, 63, 119);
+    font-size: 1rem;
+    padding: .3rem;
+}

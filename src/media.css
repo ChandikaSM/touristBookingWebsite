@@ -1,0 +1,193 @@
+
+/* navbar */
+@media screen and (min-width: 769px) {
+    .toggleNavBar, .closeNavBar {
+        display: none;
+
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+    }
+
+    .navBar .navLists {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+    }
+
+    .navItem .navLink {
+        color: var(--textColor);
+        padding: 0 0 .45rem;
+        padding: 0 0.45rem;
+        font-size: 0.9rem;
+        font-weight: 500;
+        
+    }
+
+    .navLink:hover{
+        color: var(--primaryColor);
+    }
+    .contactDiv {
+        padding: 1rem;
+    }
+
+    
+}
+
+
+
+@media screen and (min-width: 960px){
+    .header .navBar .navLists .navItem {
+        padding: 0 0.7rem;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 400;
+        
+    }
+}
+
+
+@media screen and (min-width: 1240px){
+    .header{
+        padding: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 500px){
+    .home .homeContent .textDiv .smallText {
+        font-size: 16px;
+    }
+    .homeTitle{
+        position: relative;
+        font-size: 2.3rem;
+        width: max-content;
+    }
+    .homeTitle::after {
+        position: absolute;
+        content: '';
+        background: var(--secondaryColor);
+        height: 5px;
+        width: 145px;
+        right: 0px;
+        bottom: 5px;
+        z-index: -1;
+
+    }
+
+    .cardDiv .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contactDiv {
+        padding: .8rem;
+    }
+    
+}
+
+@media screen and (min-width: 660px){
+    .home .homeContent {
+        padding: 2rem 1rem;
+       
+    }
+    .cardDiv{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 940px){
+    .home {
+        height: 70vh;
+        
+    }
+}
+
+@media screen and (min-width: 1240px){
+    .home {
+        height: 80vh;
+        
+    }
+    .homeContent{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .cardDiv{
+        padding: 2rem 1rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .cardDiv .input {
+        margin-bottom: 1rem;
+    }
+
+    .searchOptions {
+        bottom: -1rem;
+        padding: 8px 1rem;
+    }
+    .searchOptions span{
+        font-size: 17px;
+
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .container{
+        width: 80% !important;
+        margin: auto !important;
+    }
+
+    .section{
+        padding: 6rem 0 4rem ;
+    }
+    
+}
+
+@media screen and (min-width: 2560px){
+    body{
+        zoom:1.7;
+    }
+}
+
+
+@media screen and (min-width: 500px){
+    .title{
+        font-size: 1.5rem;
+
+    }
+    .title::after{
+        width: 155px !important;
+    }
+
+    .secContent{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .secContent .singleDestination {
+        height: 100%;
+    }
+}
+
+
+@media screen  and (min-width: 840px){
+    .secContent {
+        /* background: red; */
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .secContent .singleDestination {
+        height: auto;
+    }
+    
+} 
+
+@media screen and (max-width: 768px) {
+       .slider{
+        padding: .7rem;
+       }
+
+}
+
+@media screen and (max-width: 500px) {
+    .desc{
+        display: flex;
+    }
+}
