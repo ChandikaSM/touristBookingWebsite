@@ -3,6 +3,7 @@ import "./footer.css";
 import { FiChevronRight} from "react-icons/fi";
 import { MdOutlineTravelExplore } from "react-icons/md";
 import {
+  AiFillFacebook,
   AiFillInstagram,
   AiFillYoutube,
   AiOutlineTwitter,
@@ -29,12 +30,14 @@ const Footer = () => {
     <section className="footer">
       <div className="contactDiv flex">
         <div className="footerCard flex">
-          <div className="footerIntro flex">
+          <div className="footerIntro">
+            
             <div className="logoDiv">
               <a href="#" className="logo flex">
                 <MdOutlineTravelExplore className="icon" />
                 xLayer
               </a>
+            
             </div>
 
             <div className="flex">
@@ -48,12 +51,13 @@ const Footer = () => {
                 <AiOutlineTwitter className="icon" />
                 <AiFillYoutube className="icon" />
                 <AiFillInstagram className="icon" />
+                <AiFillFacebook className="icon"/>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="footerLinks grid">
+        {/* <div className="footerLinks grid">
           <div className="linkGroup">
             <span className="groupTitle">TRIPURA TOURISTS PLACE</span>
             <div>
@@ -121,7 +125,7 @@ const Footer = () => {
               })}
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="endFooter">
         <span>@copyright{currentYear}</span>

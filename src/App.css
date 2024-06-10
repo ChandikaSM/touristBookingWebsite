@@ -40,7 +40,7 @@ li {
 }
 
 .section {
-    padding: 1rem 0 2rem;
+    padding: 1rem 0 1rem;
 }
 
 .container {
@@ -106,4 +106,16 @@ body {
 
 .icon {
     color: aliceblue;
+}
+.center {
+    display: flex;
+    justify-content: center;
+}
+.spaceBetween {
+    display: flex;
+    justify-content: space-around;
+}
+.rupeesBox{
+    background: red;
+    padding: 1rem;
 }

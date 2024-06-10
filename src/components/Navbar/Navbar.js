@@ -3,35 +3,41 @@ import { MdOutlineTravelExplore } from "react-icons/md";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { TbGridDots } from "react-icons/tb";
 import "./navBar.css";
-import { set } from "firebase/database";
 import Signup from "../Sign/signUp";
+import { useNavigate } from "react-router-dom";
 
 const navData = [
   {
     id: 1,
     navLink: "Home",
+    navigated: "/home"
   },
   {
     id: 2,
     navLink: "Explore",
+    navigated: "https://www.xlayer.in/"
   },
   {
     id: 3,
     navLink: "Hotels",
+    navigated: "/hotel"
   },
   {
     id: 4,
     navLink: "About",
+    navigated: "https://www.xlayer.in/"
   },
   {
     id: 5,
     navLink: "Contact",
+    navigated: "/footer"
   },
 ];
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState("navBar");
   const [scroll, setIsScroll] = useState(false);
   const [isSignUpOpen, setIsSignUpOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,6 +65,9 @@ const Navbar = () => {
     setIsSignUpOpen(!isSignUpOpen);
     console.log("isSignUpOpen:", isSignUpOpen);
   };
+  const handlenavigated = () => {
+    navigate(`/sign`);
+  }
   return (
     <>
       <section className="navBarSection">
@@ -76,12 +85,15 @@ const Navbar = () => {
             <ul className="navLists flex">
               {navData.map((item) => {
                 return (
-                  <div className="navLink">
+                  <div className="navLink" key={item.id}>
                     <li className="navItem">{item.navLink}</li>
                   </div>
                 );
               })}
               <button className="btn navBtnBar" onClick={handleToggleModal}>
+                Login
+              </button>
+              <button className="btn navBtnBarHidden" onClick={handlenavigated}>
                 Login
               </button>
             </ul>

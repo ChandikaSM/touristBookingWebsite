@@ -7,7 +7,6 @@ const PlaceshowP = () => {
     <div>
      <div className=""> <Navbar /></div>
       <Placeshow />
-      <Hotel />
       <Footer/>
     </div>
   )

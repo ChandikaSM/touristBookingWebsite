@@ -42,9 +42,9 @@
     border-radius: 15px;
 }
 
-/* .innerRight{
+.innerRight{
     padding-left: 2rem;
-} */
+}
 .innerRight h1 {
     color: var(--primaryColor);
     padding: 1rem;
@@ -82,6 +82,10 @@
 .review {
     font-size: 1rem;
     color: grey;
+}
+.placeShow span{
+    font-size: 1.2rem;
+
 }
 
 @media screen and (max-width: 768px) {

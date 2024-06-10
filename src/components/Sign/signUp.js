@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Sign.css";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Signup = ({ isSignUpOpen, close }) => {
   const [login, setLogin] = useState(false);
@@ -10,10 +11,8 @@ const Signup = ({ isSignUpOpen, close }) => {
   const [phone, setPhone] = useState("");
   const [address, setAddress] = useState("");
   const [isOpen, setIsOpen] = useState(false);
-
-  const handleToggleMenuRemove = () => {
-    setIsOpen("close");
-  };
+  const navigate = useNavigate();
+ 
 
   const handleSubmit = (e) => {
     e.preventDefault();

@@ -3,8 +3,34 @@ import video from "../../assets/one.mp4";
 import { GrLocation } from "react-icons/gr";
 import { FaFacebook, FaTripadvisor } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
+import { useState } from "react";
 
+const placesSearches =  [
+  "dhalai",
+  "sipahijala",
+  "Neer mahal",
+  "dumboor lake",
+  "jampui hills",
+  "North Tripura",
+  "Ujjayanta Palace",
+  "West Tripura",
+  "Dumboor Narkel Kunja",
+  "Bashgram",
+  "Khowai",
+  "Heritage Park"
+];
 const Home = () => {
+  const [placesSearch, setPlacesSearch] = useState(placesSearches);
+  const [searchVal, setSearchVal] = useState(""); 
+  const handleSearch = () => {
+    const filterBySearch = placesSearches.filter((item) => {
+      if(item.toLowerCase().includes(searchVal.toLowerCase())){
+        return item;
+      }
+    })
+    setSearchVal(filterBySearch);
+
+  }
   return (
     <section>
       <div className="overlay"></div>
@@ -21,9 +47,9 @@ const Home = () => {
             <label htmlFor="city">
               Search your destination place at TRIPURA:
             </label>
-            <div className="input flex">
-              <input type="text" placeholder="Enter name here..." />
-              <GrLocation className="icon" />
+            <div className="input flex" >
+              <input type="text" placeholder="Enter name here..." onChange={(e) => setSearchVal(e.target.value)}/>
+              <GrLocation className="icon" onClick={handleSearch}/>
             </div>
           </div>
           <div className="dateInput">
@@ -33,27 +59,13 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="priceInput">
-            <div className="label_total flex">
-              <label htmlFor="price">Max price :</label>
-              <h3 className="total">$5000</h3>
-            </div>
-            <div className="input flex">
-              <input type="range" max="5000" min="1000" />
-            </div>
-          </div>
+  
 
           <div className="searchOptions flex">
-            <a href="https://www.xlayer.in/">
-              <span>OUR WEBSITE</span>
-            </a>
-            <a href="https://www.instagram.com/xlayercom/">
-              <FiInstagram className="icon" />
-            </a>
-
-            <a href="https://www.facebook.com/xlayercom/">
-              <FaFacebook className="icon" />
-            </a>
+           
+                <button className="btn" type="submit"> Book Now</button>
+       
+           
           </div>
         </div>
       </div>

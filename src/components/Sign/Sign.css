@@ -198,8 +198,30 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
-  .registrationContainer {
-    max-width: 600px;
+  
+  .signupModal{
+   
+    width: 90%;
+    height: 90%;
+    margin: 5% auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.1);
+
+  }
+  .signupModalContent {
+    width: 100%;
+    padding: 200px;
+  }
+  .signupModalContent .flex{
+    flex-direction: column;
+  }
+  .registrationContainer{
+    max-width: max-content;
+  }
+  
+  
+  .signp .imgDiv{
+    display: none;
   }
 }
 
@@ -223,6 +245,8 @@ h2 {
 .close {
   display: none;
 }
+
+
 /* .open{
    display: inline;
  } */

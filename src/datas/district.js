@@ -8,11 +8,15 @@ const district = [
                 temple: [
                     {
                         id: 1,
-                        name: "Kamaleswari Mandir"
+                        name: "Kamaleswari Mandir",
+                        // url: "https://www.gosahin.com/upload/destinations/1519467747_Kamaleswari-temple1.jpg",
+                        // description: "The temple is situated in the Kamalpur Nagar Panchayat of the Dhalai District. This Temple is located in the center of the town and a major pilgrimage spot. Kamaleswari is another name of Goddess Kali. Kamalpur the largest Sub-divisional Town has been named after the temple. Kamaleswari Mandir is about 35 kms away from Ambassa,District H.Q of Dhalai and 122 kms from Agartala the State capital of Tripura."
                     },
                     {
                         id: 2,
-                        name: "Longtharai Mandir"
+                        name: "Longtharai Mandir",
+                        // url: "https://www.nativeplanet.com/photos/929x523x90/2019/01/photo-92-120551-1.jpg",
+                        // description: "Longtharai is the name of Lord Shiva in KOK-BOROK language, according to the Tribal dialect of Tripura. There is a myth which says that Shiva on his return from Kailash rested here for sometime in the hill of Longtharai. The hill is therefore known as Longtharai. Longtharai also means a Deep Valley. This temple is also one of the most popular tourist spot of the Dhalai District."
                     }
                 ]
             },

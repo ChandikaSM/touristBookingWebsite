@@ -26,7 +26,7 @@ video {
   top: 0;
   object-fit: inherit;
   background-color: rgb(236, 236, 236);
-  border-radius: 0 0 13px 13px;
+  border-radius: 0 0 25px 25px;
 
 }
 
@@ -133,9 +133,11 @@ input::placeholder {
   font-size: 18px;
 }
 
-span {
+.searchOptions span {
   font-size: 13px;
   color: aliceblue;
+  display: flex;
+  justify-content: center;
 }
 
 .homeFooterIcons {

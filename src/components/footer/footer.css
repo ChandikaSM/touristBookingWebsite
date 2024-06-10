@@ -1,7 +1,7 @@
 .footer {
     width: 100%;
     position: relative;
-    padding: 2rem 0;
+    padding: auto;
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -131,12 +131,14 @@
     font-size: 13px;
     color: var(--textColor);
     padding: 1rem;
-    flex: 2;
+    flex: 3;
     text-align: justify;
 }
 
 .footerSocials {
     flex: 1;
+    display: flex;
+    justify-content: center;
     background: rgb(229, 217, 229);
     border-radius: 15px;
     padding: 1rem;

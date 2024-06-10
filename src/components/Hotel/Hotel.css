@@ -2,6 +2,7 @@
   width: 100%;
 }
 
+
 .secTitle .title {
   position: relative;
   width: max-content;
@@ -154,3 +155,4 @@ small {
   align-self: center;
   font-size: 18px;
 }
+

@@ -1,0 +1,87 @@
+
+/* Modal */
+.modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    width: 600px;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Form styling */
+.form-label {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.form-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-select option {
+    font-size: 16px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group span {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.form-group input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.online-payment {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+/* Icons */
+.icon {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* .bookingLabel{
+    padding: 1rem;
+    border: 1px solid grey;
+} */
+.quantity {
+    display: flex;
+    justify-content: space-between;
+}

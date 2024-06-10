@@ -102,6 +102,9 @@
         height: 70vh;
         
     }
+    .slider {
+        padding: 1rem;
+    }
 }
 
 @media screen and (min-width: 1240px){
@@ -162,9 +165,8 @@
     .secContent{
         grid-template-columns: repeat(2, 1fr);
     }
-    .secContent .singleDestination {
-        height: 100%;
-    }
+    
+    
 }
 
 
@@ -181,8 +183,19 @@
 
 @media screen and (max-width: 768px) {
        .slider{
-        padding: .7rem;
+        padding: .3rem;
+        
        }
+       .hotel h5{
+         font-size: .8rem;
+       }
+      .footerCard .flex {
+        flex-direction: column;
+      }
+      .footerIntro .logoDiv{
+        justify-content: center;
+      }
+       
 
 }
 
@@ -190,4 +203,5 @@
     .desc{
         display: flex;
     }
+   
 }

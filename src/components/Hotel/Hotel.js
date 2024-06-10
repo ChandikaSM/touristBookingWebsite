@@ -102,11 +102,11 @@ const Hotel = () => {
                     </span>
 
                     <div className="fees">
-                      <div className="price">
+                      <div className="price hotel">
                         <h5>{price}</h5>
                       </div>
                     </div>
-                    <div className="buttonDiv">
+                    <div className="buttonDiv hotelDiv">
                       <button
                         className="btn flex"
                         onClick={() => handleEach(id)}
